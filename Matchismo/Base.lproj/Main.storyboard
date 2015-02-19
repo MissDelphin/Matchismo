@@ -170,15 +170,6 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PBe-eg-NIl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRu-7G-VbB">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="695" width="328" height="48"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK4-Zp-ZbN">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -193,6 +184,15 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ugw-Cd-3xo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjt-ZA-m5D">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="759" width="368" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.094052923230000002" green="0.43939393939999999" blue="0.22442543000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -208,8 +208,8 @@
                                 <exclude reference="Wya-jD-XUF"/>
                                 <exclude reference="pUF-Eb-R30"/>
                                 <exclude reference="Up0-sN-ciz"/>
-                                <exclude reference="uRu-7G-VbB"/>
                                 <exclude reference="zK4-Zp-ZbN"/>
+                                <exclude reference="Sjt-ZA-m5D"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -225,13 +225,25 @@
                                 <include reference="Wya-jD-XUF"/>
                                 <include reference="pUF-Eb-R30"/>
                                 <include reference="Up0-sN-ciz"/>
-                                <include reference="uRu-7G-VbB"/>
                                 <include reference="zK4-Zp-ZbN"/>
+                                <include reference="Sjt-ZA-m5D"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="flipsLabel" destination="uRu-7G-VbB" id="9Da-ZN-JD9"/>
+                        <outlet property="scoreLabel" destination="Sjt-ZA-m5D" id="d76-I6-WKN"/>
+                        <outletCollection property="cardButtons" destination="zK4-Zp-ZbN" id="hS5-rU-Us7"/>
+                        <outletCollection property="cardButtons" destination="Up0-sN-ciz" id="gJ9-gC-dgf"/>
+                        <outletCollection property="cardButtons" destination="pUF-Eb-R30" id="Uk0-TE-Ngs"/>
+                        <outletCollection property="cardButtons" destination="Wya-jD-XUF" id="Y42-Vd-kjS"/>
+                        <outletCollection property="cardButtons" destination="FRZ-rv-KCs" id="8ox-G5-P2P"/>
+                        <outletCollection property="cardButtons" destination="pnG-Bg-vin" id="cXx-L5-3ES"/>
+                        <outletCollection property="cardButtons" destination="k5i-HY-6ow" id="AVY-yL-wLg"/>
+                        <outletCollection property="cardButtons" destination="i5e-D8-GN8" id="Xyc-VZ-dbD"/>
+                        <outletCollection property="cardButtons" destination="ikk-OB-deQ" id="z6K-dK-UXp"/>
+                        <outletCollection property="cardButtons" destination="8dH-vt-zZf" id="Cen-Sx-lZ3"/>
+                        <outletCollection property="cardButtons" destination="Qi4-lA-CRw" id="cer-Ze-9Y1"/>
+                        <outletCollection property="cardButtons" destination="LmA-Ta-fYA" id="REG-2p-uj7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
